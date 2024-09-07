@@ -1,0 +1,184 @@
+/* Réinitialisation des marges et des espacements par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Style de l'en-tête */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Style principal */
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.niveau {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.niveau:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.niveau h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.niveau ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.niveau li {
+    margin: 0.5rem 0;
+}
+
+.niveau a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.niveau a:hover {
+    text-decoration: underline;
+}
+
+/* Style du pied de page */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+/* Styles pour les fichiers load */
+.load-description {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    color: #555;
+}
+
+/* Style pour les paragraphes dans les fichiers load */
+.load-description p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Styles d'animation pour les éléments en survol */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.niveau {
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .niveau {
+        padding: 0.75rem;
+    }
+
+    .niveau h3 {
+        font-size: 1.2rem;
+    }
+
+    .niveau a {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav a {
+        margin: 0.25rem 0;
+    }
+
+    .niveau {
+        padding: 0.5rem;
+    }
+
+    .niveau h3 {
+        font-size: 1rem;
+    }
+
+    .niveau a {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+}
