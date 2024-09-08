@@ -1,184 +1,131 @@
-/* Réinitialisation des marges et des espacements par défaut */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style général du corps de la page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background: #f4f4f4;
+    background-color: #f4f4f4;
     color: #333;
+    padding: 20px;
 }
 
-/* Style de l'en-tête */
+/* Header Styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 header nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    margin: 0 0.5rem;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    color: #18bc9c;
 }
 
-/* Style principal */
+/* Main Section Styling */
 main {
-    padding: 1rem;
+    margin-top: 20px;
 }
 
-section {
-    margin-bottom: 2rem;
+main h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
 }
 
+/* Styling for Niveau Sections */
 .niveau {
-    background: #fff;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-    padding: 1rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .niveau:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .niveau h3 {
-    margin-bottom: 1rem;
-    color: #333;
+    font-size: 1.8rem;
+    color: #18bc9c;
+    margin-bottom: 15px;
 }
 
+/* Niveau List Styling */
 .niveau ul {
     list-style: none;
-    padding-left: 0;
 }
 
-.niveau li {
-    margin: 0.5rem 0;
+.niveau ul li {
+    margin: 10px 0;
 }
 
-.niveau a {
+.niveau ul li a {
+    color: #2c3e50;
     text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease, font-size 0.3s ease;
 }
 
-.niveau a:hover {
-    text-decoration: underline;
+.niveau ul li a:hover {
+    color: #18bc9c;
+    font-size: 1.3rem;
 }
 
-/* Style du pied de page */
+/* Footer Styling */
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #2c3e50;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    position: relative;
-    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
 }
 
-/* Styles pour les fichiers load */
-.load-description {
-    margin-top: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fff;
-    color: #555;
-}
-
-/* Style pour les paragraphes dans les fichiers load */
-.load-description p {
-    margin: 0;
+footer p {
     font-size: 1rem;
 }
 
-/* Styles d'animation pour les éléments en survol */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideIn {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
-}
-
-.header {
-    animation: fadeIn 1s ease-in-out;
-}
-
-.niveau {
-    animation: slideIn 0.5s ease-out;
-}
-
 /* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.2rem;
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .niveau {
-        padding: 0.75rem;
-    }
-
-    .niveau h3 {
-        font-size: 1.2rem;
-    }
-
-    .niveau a {
-        font-size: 0.9rem;
-    }
-
-    footer {
-        padding: 0.75rem;
+        flex: 1 1 45%;
+        margin: 10px;
     }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1rem;
-    }
-
-    header nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header nav a {
-        margin: 0.25rem 0;
-    }
-
+@media (min-width: 1024px) {
     .niveau {
-        padding: 0.5rem;
-    }
-
-    .niveau h3 {
-        font-size: 1rem;
-    }
-
-    .niveau a {
-        font-size: 0.8rem;
-    }
-
-    footer {
-        padding: 0.5rem;
+        flex: 1 1 30%;
+        margin: 15px;
     }
 }
