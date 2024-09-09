@@ -3,37 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Français - Sixième</title>
-    <link rel="stylesheet" href="../../style.css">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            AOS.init();
-        });
-    </script>
+    <title>Documents - Français Sixième</title>
+    <link rel="stylesheet" href="/../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <style>
+        .document-list {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .document-list h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Conteneur pour chaque document */
+        .document-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .document-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Désactivation du style de liste */
+        .document-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .document-list ul li {
+            margin-bottom: 15px;
+        }
+
+        .document-list a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .document-list a:hover {
+            background-color: #2980b9;
+            transform: translateY(-5px);
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-back:hover {
+            background-color: #27ae60;
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Français - Sixième</h1>
+        <h1>Documents de Français - Sixième</h1>
         <nav>
-            <a href="../../index.html">Accueil</a>
-            <a href="../sixieme/francais.html">Retour au cours de Français</a>
+            <a href="../../index.html">Accueil</a> &gt;
+            <a href="../sixieme.html">Sixième</a> &gt;
+            <span>Français</span>
         </nav>
     </header>
 
-    <main>
-        <section data-aos="fade-up">
-            <h2>Description du Fichier</h2>
-            <p>
-                Ce fichier PDF contient le cours complet de Français pour la classe de Sixième, incluant des leçons, des exercices et des activités. Veuillez le télécharger pour une consultation complète.
-            </p>
-        </section>
+    <main data-aos="fade-up">
+        <section class="document-list">
+            <h2>Profitez des documents proposés pour vous :</h2>
+            <ul>
+                <li class="document-item">
+                    <p>Chapitre 1 : Grammaire - Ce document couvre les bases de la grammaire française.</p>
+                    <a href="documents/francais_chapitre1.pdf" download>Télécharger le document</a>
+                </li>
+                <li class="document-item">
+                    <p>Chapitre 2 : Conjugaison - Ce document explore les règles de conjugaison des verbes.</p>
+                    <a href="documents/francais_chapitre2.pdf" download>Télécharger le document</a>
+                </li>
+                <li class="document-item">
+                    <p>Littérature - Découvrez les œuvres majeures de la littérature française en Sixième.</p>
+                    <a href="documents/francais_litterature.pdf" download>Télécharger le document</a>
+                </li>
+            </ul>
 
-        <section data-aos="fade-up">
-            <a href="../../documents/francais_chapitre1.pdf" class="download-button" data-aos="fade-up">
-                Télécharger le PDF
-            </a>
+            <a href="../sixieme.html" class="btn-back">Retour à la classe</a>
         </section>
     </main>
 
@@ -41,6 +111,9 @@
         <p>&copy; 2024 Xlevy. Tous droits réservés.</p>
     </footer>
 
-    <script src="../../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

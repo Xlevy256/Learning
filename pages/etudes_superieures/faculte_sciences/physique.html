@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physique - Faculté des Sciences</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <style>
+        .btn-documents {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-documents:hover {
+            background-color: #2980b9;
+            transform: translateY(-5px);
+        }
+
+        .document-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .course-description {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>Physique - Faculté des Sciences</h1>
+        <nav>
+            <a href="../../index.html">Accueil</a> &gt;
+            <a href="../faculte_sciences.html">Faculté des Sciences</a> &gt;
+            <span>Physique</span>
+        </nav>
+    </header>
 
+    <main data-aos="fade-up">
+        <section>
+            <h2>Description du Cours de Physique</h2>
+            <div class="course-description">
+                <p>Le cours de Physique à la Faculté des Sciences aborde des sujets tels que la mécanique, l'électromagnétisme, et l'optique.</p>
+            </div>
+
+            <!-- Bouton de redirection stylisé -->
+            <div class="document-link" data-aos="fade-right">
+                <a href="load_physique.html" class="btn-documents">Accéder aux documents</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Xlevy. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-
 </html>
