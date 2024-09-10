@@ -1,14 +1,105 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents - Français Terminale</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <style>
+        .document-list {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .document-list h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .document-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .document-list ul li {
+            margin-bottom: 15px;
+        }
+
+        .document-list a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .document-list a:hover {
+            background-color: #2980b9;
+            transform: translateY(-5px);
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-back:hover {
+            background-color: #27ae60;
+            transform: translateY(-5px);
+        }
+
+        .document-item {
+            margin-bottom: 20px;
+            text-align: left;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>Documents de Français - Terminale</h1>
+        <nav>
+            <a href="../../index.html">Accueil</a> &gt;
+            <a href="../terminale.html">Terminale</a> &gt;
+            <span>Français</span>
+        </nav>
+    </header>
 
+    <main data-aos="fade-up">
+        <section class="document-list">
+            <h2>Profitez des documents proposés pour vous :</h2>
+            <div class="document-item">
+                <p>Chapitre 1 : La tragédie classique.</p>
+                <a href="documents/francais_tragedie_classique.pdf" download>Télécharger Chapitre 1</a>
+            </div>
+            <div class="document-item">
+                <p>Chapitre 2 : Les mouvements littéraires du XIXe siècle.</p>
+                <a href="documents/francais_mouvements_litteraires.pdf" download>Télécharger Chapitre 2</a>
+            </div>
+
+            <a href="../terminale.html" class="btn-back">Retour à la classe</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Xlevy. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-
 </html>
