@@ -194,3 +194,141 @@ footer p {
 .btn-documents:hover {
     background-color: #0056b3;
 }
+
+/*Essaie*/
+/* Style général du body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style de l'entête */
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Style de la section principale */
+main {
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animation pour la section principale */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style de chaque div de document */
+.document-item {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.document-item:hover {
+    transform: scale(1.05);
+}
+
+/* Style des paragraphes de chaque document */
+.document-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Boutons de téléchargement des documents */
+.document-list a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.document-list a:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+/* Bouton retour */
+.btn-back {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #27ae60;
+    transform: translateY(-5px);
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
